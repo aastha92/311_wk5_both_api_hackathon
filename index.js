@@ -3,7 +3,7 @@ const app = express()
 
 const employeesRoutes = require('./routes/employees');
 
-app.use (employeesRoutes)
+app.use(employeesRoutes)
 const port = process.env.PORT || 4001;
 
 app.get('/', (req, res) => {
