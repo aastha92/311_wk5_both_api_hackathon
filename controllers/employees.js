@@ -1,3 +1,5 @@
+const pool = require('./sql/connection')
+
 const getEmployees = (req,res) =>{}
 
 const getEmployeesById = (req,res) =>{}
