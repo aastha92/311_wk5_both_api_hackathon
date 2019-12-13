@@ -1,4 +1,8 @@
-const pool = require('./sql/connection');
+
+const pool = require('./sql/connection')
+
+const getEmployees = (req,res) =>{}
+
 
 const getEmployees = (req,res) =>{
     let sql = 'SELECT * FROM ?? LIMIT ?';
