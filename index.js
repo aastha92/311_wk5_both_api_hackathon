@@ -3,7 +3,12 @@ const app = express()
 
 const employeesRoutes = require('./routes/employees');
 
-app.use(employeesRoutes)
+//const sqlcon = require('./mysql/connection');
+
+app.use(employeesRoutes);
+
+//app.use(sqlcon);
+
 const port = process.env.PORT || 4001;
 
 app.get('/', (req, res) => {

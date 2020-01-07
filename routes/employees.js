@@ -1,9 +1,9 @@
 const express = require('express');
 const router = express.Router();
 
-router.get ('/employees', (req, res) => {
-    res.send ("getting employees...")
-}) 
+employeesController = require('../controllers/employees');
+
+router.get ('/employees' , employeesController.getEmployees); 
 
 router.get ('/employees/:id', (req, res) => {
     res.send ("getting employees...")
