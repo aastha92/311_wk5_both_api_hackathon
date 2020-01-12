@@ -5,12 +5,8 @@ employeesController = require('../controllers/employees');
 
 router.get ('/employees' , employeesController.getEmployees); 
 
-router.get ('/employees/:id', (req, res) => {
-    res.send ("getting employees...")
-}) 
+router.get ('/employees/:id', employeesController.getEmployeesById); 
     
-router.get ('/firstname/:first_name', (req, res) => {
-    res.send ("getting employees...")
-}) 
+router.get ('/firstname/:first_name', employeesController.getEmployeesByFirstName); 
 
 module.exports = router;
